@@ -1,0 +1,823 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x46a3F341a20601925C43aA029aAaB22f6292f5ee",
+      "txHash": "0xdd7b33acb49f4b4e70c460fe8f7d22bef97ea47074a4e2d591dad8790046b671",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xA9B51506604813C338253648F2a228b6ebF9329a",
+      "txHash": "0x0d5e2bad8371fd60130711d7165610f718f51ec1438664f3b9f375cbc5001d34",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x34daE80a5C9Eefc2464E925Ea3b255819C291211",
+      "txHash": "0xd1a53ae9c10232ff6274ff9fd0982f20f48182dc6d2506c82e15205c368adcdc",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "2f04d6222a8bb9ddcfd1e976d790d371125406118ba821b387d6888c511f17f6": {
+      "address": "0xF22fdAaf0dc115a28f80dFe80f4487b1D61e2748",
+      "txHash": "0x282bdac76c65286a1ecd59dbc2e6701546c11d68e8071690e8362943278274ad",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:40"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:88"
+          },
+          {
+            "label": "_provider",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_contract(IPoolAddressesProvider)922",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:36"
+          },
+          {
+            "label": "_pool",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_contract(IPool)713",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:37"
+          },
+          {
+            "label": "tokenA",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_address",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:39"
+          },
+          {
+            "label": "tokenB",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_address",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:40"
+          },
+          {
+            "label": "DEX1",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_address",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:41"
+          },
+          {
+            "label": "DEX2",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_address",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:42"
+          },
+          {
+            "label": "pairConfigs",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_array(t_struct(PairConfig)2604_storage)dyn_storage",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:51"
+          },
+          {
+            "label": "activePairIndex",
+            "offset": 0,
+            "slot": "158",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:52"
+          },
+          {
+            "label": "slippageTolerance",
+            "offset": 0,
+            "slot": "159",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:54"
+          },
+          {
+            "label": "minProfit",
+            "offset": 0,
+            "slot": "160",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:55"
+          },
+          {
+            "label": "autoWithdrawProfit",
+            "offset": 0,
+            "slot": "161",
+            "type": "t_bool",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:56"
+          },
+          {
+            "label": "paused",
+            "offset": 1,
+            "slot": "161",
+            "type": "t_bool",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:57"
+          },
+          {
+            "label": "operators",
+            "offset": 0,
+            "slot": "162",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:59"
+          },
+          {
+            "label": "totalArbitrages",
+            "offset": 0,
+            "slot": "163",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:61"
+          },
+          {
+            "label": "totalProfit",
+            "offset": 0,
+            "slot": "164",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:62"
+          },
+          {
+            "label": "lastExecutionTime",
+            "offset": 0,
+            "slot": "165",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:63"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(PairConfig)2604_storage)dyn_storage": {
+            "label": "struct UltraArbitrageFlashLoanBotUpgradeable.PairConfig[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IPool)713": {
+            "label": "contract IPool",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IPoolAddressesProvider)922": {
+            "label": "contract IPoolAddressesProvider",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(PairConfig)2604_storage": {
+            "label": "struct UltraArbitrageFlashLoanBotUpgradeable.PairConfig",
+            "members": [
+              {
+                "label": "tokenA",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "tokenB",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "DEX1",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "DEX2",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "df0aa89f0bc1158ba8147386a7ef8fa52ff729bf8b61604cb1f1a44068a326fd": {
+      "address": "0xfE9255f80A7aa7eBfd54C9c5Bfb697b86A59CaC9",
+      "txHash": "0x223226a9db4b08b6a4c6e9c79bcfda0390093bc2549807839b5e148024c9b7ea",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:40"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:88"
+          },
+          {
+            "label": "_provider",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_contract(IPoolAddressesProvider)922",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:35"
+          },
+          {
+            "label": "_pool",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_contract(IPool)713",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:36"
+          },
+          {
+            "label": "tokenA",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_address",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:38"
+          },
+          {
+            "label": "tokenB",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_address",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:39"
+          },
+          {
+            "label": "DEX1",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_address",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:40"
+          },
+          {
+            "label": "DEX2",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_address",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:41"
+          },
+          {
+            "label": "pairConfigs",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_array(t_struct(PairConfig)2604_storage)dyn_storage",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:50"
+          },
+          {
+            "label": "activePairIndex",
+            "offset": 0,
+            "slot": "158",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:51"
+          },
+          {
+            "label": "slippageTolerance",
+            "offset": 0,
+            "slot": "159",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:53"
+          },
+          {
+            "label": "minProfit",
+            "offset": 0,
+            "slot": "160",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:54"
+          },
+          {
+            "label": "autoWithdrawProfit",
+            "offset": 0,
+            "slot": "161",
+            "type": "t_bool",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:55"
+          },
+          {
+            "label": "paused",
+            "offset": 1,
+            "slot": "161",
+            "type": "t_bool",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:56"
+          },
+          {
+            "label": "operators",
+            "offset": 0,
+            "slot": "162",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:58"
+          },
+          {
+            "label": "totalArbitrages",
+            "offset": 0,
+            "slot": "163",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:60"
+          },
+          {
+            "label": "totalProfit",
+            "offset": 0,
+            "slot": "164",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:61"
+          },
+          {
+            "label": "lastExecutionTime",
+            "offset": 0,
+            "slot": "165",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:62"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(PairConfig)2604_storage)dyn_storage": {
+            "label": "struct UltraArbitrageFlashLoanBotUpgradeable.PairConfig[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IPool)713": {
+            "label": "contract IPool",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IPoolAddressesProvider)922": {
+            "label": "contract IPoolAddressesProvider",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(PairConfig)2604_storage": {
+            "label": "struct UltraArbitrageFlashLoanBotUpgradeable.PairConfig",
+            "members": [
+              {
+                "label": "tokenA",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "tokenB",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "DEX1",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "DEX2",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "78b11e05a14d531f0981ee300b6d44bb908cf12a443ed912a9e302f69a4e2f98": {
+      "address": "0x494fAb907C27939cf57194A68506245d006A7b71",
+      "txHash": "0x7dcecf021fb449971d8a8fbd8d6090497162960a01649dfcc269c8bb6b55f004",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:40"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:88"
+          },
+          {
+            "label": "_provider",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_contract(IPoolAddressesProvider)922",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:35"
+          },
+          {
+            "label": "_pool",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_contract(IPool)713",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:36"
+          },
+          {
+            "label": "tokenA",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_address",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:38"
+          },
+          {
+            "label": "tokenB",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_address",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:39"
+          },
+          {
+            "label": "DEX1",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_address",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:40"
+          },
+          {
+            "label": "DEX2",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_address",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:41"
+          },
+          {
+            "label": "pairConfigs",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_array(t_struct(PairConfig)2604_storage)dyn_storage",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:50"
+          },
+          {
+            "label": "activePairIndex",
+            "offset": 0,
+            "slot": "158",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:51"
+          },
+          {
+            "label": "slippageTolerance",
+            "offset": 0,
+            "slot": "159",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:53"
+          },
+          {
+            "label": "minProfit",
+            "offset": 0,
+            "slot": "160",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:54"
+          },
+          {
+            "label": "autoWithdrawProfit",
+            "offset": 0,
+            "slot": "161",
+            "type": "t_bool",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:55"
+          },
+          {
+            "label": "paused",
+            "offset": 1,
+            "slot": "161",
+            "type": "t_bool",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:56"
+          },
+          {
+            "label": "operators",
+            "offset": 0,
+            "slot": "162",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:58"
+          },
+          {
+            "label": "totalArbitrages",
+            "offset": 0,
+            "slot": "163",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:60"
+          },
+          {
+            "label": "totalProfit",
+            "offset": 0,
+            "slot": "164",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:61"
+          },
+          {
+            "label": "lastExecutionTime",
+            "offset": 0,
+            "slot": "165",
+            "type": "t_uint256",
+            "contract": "UltraArbitrageFlashLoanBotUpgradeable",
+            "src": "contracts\\FlashEngineX.sol:62"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(PairConfig)2604_storage)dyn_storage": {
+            "label": "struct UltraArbitrageFlashLoanBotUpgradeable.PairConfig[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IPool)713": {
+            "label": "contract IPool",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IPoolAddressesProvider)922": {
+            "label": "contract IPoolAddressesProvider",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(PairConfig)2604_storage": {
+            "label": "struct UltraArbitrageFlashLoanBotUpgradeable.PairConfig",
+            "members": [
+              {
+                "label": "tokenA",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "tokenB",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "DEX1",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "DEX2",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}
